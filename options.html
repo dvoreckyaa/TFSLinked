@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>TFSLinked options</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Description Contenst Selector:</td>
+        <td><input id="contentSelector" type="text" /></td>
+      </tr>
+      <tr>
+        <td>Changesets Selector:</td>
+        <td><input id="descriptionQuery" type="text" /></td>
+      </tr>
+      <tr>
+        <td>TFS File Path Link Pattern:</td>
+        <td><input id="tfsFilePattern" type="text" /></td>
+      </tr>
+      <tr>
+        <td>TFS Chnageset Link Pattern:</td>
+        <td><input id="changesetPattern" type="text" /></td>
+      </tr>
+    </table>
+    <br />
+    <button id="save">Save</button>
+    <button id="reset">Load default</button>
+    <div id="status"></div>
+  </body>
+
+  <script src="options.js"></script>
+  <script src="optionsUI.js"></script>
+</html>
