@@ -1,7 +1,7 @@
 ﻿var defOptions = {
-  contentSelector: "div.issue-body-content",
+  contentSelector: "div.issue-body-content,div.ak-renderer-document",
   descriptionQuery:
-    "td:containsIN('Changeset:'):containsIN('Modified Files:'),p:containsIN('Changeset:'):containsIN('Modified Files:')",
+    "td:containsIN('Changeset:'):containsIN('Modified Files:'),p:containsIN('Changeset:'),p:containsIN('Changeset:'):containsIN('Modified Files:')",
   tfsFilePattern:
     "<a href='http://mps-tfs-main:8080/tfs/E10Dev/ERP/_versionControl?path={0}' target='_blank'>{1}</a>",
   changesetPattern:
