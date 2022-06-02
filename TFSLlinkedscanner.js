@@ -7,7 +7,7 @@
 
 var globalOptions = {};
 
-function getiIsOldStructure() {
+function getIsOldStructure() {
   //const urlParams = new URLSearchParams(window.location.search);
   //const oldIssueView = urlParams.get("oldIssueView") || "";
   //console.log("oldIssueView", oldIssueView);
@@ -29,7 +29,8 @@ function createCopyToClipboardButtons() {
   if (isOldStructure) {
     $sum.after($btnDiv);
   } else {
-    $sum.parents("div[class*='RootWrapper']").after($btnDiv);
+    //$sum.parents("div[class*='RootWrapper']").after($btnDiv);
+    $sum.first().parent().parent().after($btnDiv);
   }
   $btnDiv.append(
     '<button type="button" id="copySummaryToClipboard">Copy To Clipboard</button>'

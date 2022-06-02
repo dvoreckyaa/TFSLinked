@@ -13,7 +13,6 @@ const OptionsKey = "TFSLinked";
 var appSettings = new (function () {
   this.browser = () => (window.browser ? window.browser : window.chrome);
   this.appStorage = () => this.browser().storage.local;
-  this.appStorage = () => this.browser().storage.local;
   this.getSetting = (key, callback) => this.appStorage().get(key, callback);
   this.setSetting = (options, callback) => {
     this.appStorage().set(options, function (result) {
